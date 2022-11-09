@@ -18,11 +18,11 @@ CREATE TABLE dao_themes (
     id SERIAL PRIMARY KEY,
 );
 
-ALTER TABLE dao_themes add column theme_name TEXT NOT NULL default ''
-ALTER TABLE dao_themes add column primary_color TEXT NOT NULL default '';
-ALTER TABLE dao_themes add column secondary_color TEXT NOT NULL default '';
-ALTER TABLE dao_themes add column dark_primary_color TEXT NOT NULL default '';
-ALTER TABLE dao_themes add column dark_secondary_color TEXT NOT NULL default '';
+ALTER TABLE dao_themes add column theme_name TEXT NOT NULL default 'Paideia'
+ALTER TABLE dao_themes add column primary_color TEXT NOT NULL default '#00868F';
+ALTER TABLE dao_themes add column secondary_color TEXT NOT NULL default '#FF8219';
+ALTER TABLE dao_themes add column dark_primary_color TEXT NOT NULL default '#9FD2DB';
+ALTER TABLE dao_themes add column dark_secondary_color TEXT NOT NULL default '#FC9E4F';
 
 CREATE TABLE dao_designs (
     id SERIAL PRIMARY KEY,
