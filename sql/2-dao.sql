@@ -16,12 +16,13 @@ CREATE TABLE daos (
 -- design
 CREATE TABLE dao_themes (
     id SERIAL PRIMARY KEY,
-    theme_name TEXT NOT NULL,
-    primary_color TEXT NOT NULL,
-    secondary_color TEXT NOT NULL,
-    dark_primary_color TEXT NOT NULL,
-    dark_secondary_color TEXT NOT NULL
 );
+
+ALTER TABLE dao_themes add column theme_name TEXT NOT NULL default ''
+ALTER TABLE dao_themes add column primary_color TEXT NOT NULL default '';
+ALTER TABLE dao_themes add column secondary_color TEXT NOT NULL default '';
+ALTER TABLE dao_themes add column dark_primary_color TEXT NOT NULL default '';
+ALTER TABLE dao_themes add column dark_secondary_color TEXT NOT NULL default '';
 
 CREATE TABLE dao_designs (
     id SERIAL PRIMARY KEY,

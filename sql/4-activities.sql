@@ -23,3 +23,5 @@ CREATE TABLE notifications (
     date TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     is_read BOOLEAN DEFAULT false
 );
+
+ALTER TABLE activity_log DROP column img_url;
