@@ -122,3 +122,7 @@ CREATE TABLE distribution_config (
 ALTER TABLE user_details
 ADD CONSTRAINT user_details_dao_id_fkey
 FOREIGN KEY (dao_id) REFERENCES daos(id) ON DELETE CASCADE;
+
+-- patches
+ALTER TABLE daos ADD COLUMN category TEXT;
+ALTER TABLE daos ADD COLUMN created_dtz TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP;

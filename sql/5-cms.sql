@@ -26,3 +26,9 @@ CREATE TABLE quotes (
     author TEXT,
     show BOOLEAN DEFAULT true
 );
+
+-- sponsered/highlighted projects section
+CREATE TABLE project_highlights (
+    id SERIAL PRIMARY KEY,
+    dao_id INT NOT NULL REFERENCES daos(id) ON DELETE CASCADE
+);

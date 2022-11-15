@@ -7,6 +7,8 @@ CREATE VIEW vw_daos AS (
         D.dao_name,
         D.dao_url,
         D.dao_short_description,
+        D.category,
+        D.created_dtz,
         DD.logo_url,
         T.token_id,
         T.token_ticker,
